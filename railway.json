@@ -1,6 +1,8 @@
 {
   "build": {
-    "builder": "NIXPACKS"
+    "env": {
+      "PYTHONUNBUFFERED": "1"
+    }
   },
   "deploy": {
     "startCommand": "python weather_bot.py"
@@ -8,7 +10,7 @@
   "jobs": [
     {
       "name": "weather-job",
-      "schedule": "0 * * * *",
+      "schedule": "0 * * * *",  // chạy mỗi giờ
       "command": "python weather_bot.py"
     }
   ]
