@@ -1,13 +1,15 @@
 {
   "build": {
-    "env": {
-      "BOT_TOKEN": "ENV",
-      "CHAT_ID": "ENV",
-      "API_KEY": "ENV"
-    }
+    "builder": "NIXPACKS"
   },
-  "plugins": [],
-  "scripts": {
-    "start": "python weather_bot.py"
-  }
+  "deploy": {
+    "startCommand": "python weather_bot.py"
+  },
+  "jobs": [
+    {
+      "name": "weather-job",
+      "schedule": "0 * * * *",
+      "command": "python weather_bot.py"
+    }
+  ]
 }
