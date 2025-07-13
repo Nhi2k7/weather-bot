@@ -1,0 +1,14 @@
+// railway.json
+{
+  "build": {
+    "env": {
+      "BOT_TOKEN": "ENV",
+      "CHAT_ID": "ENV",
+      "API_KEY": "ENV"
+    }
+  },
+  "plugins": [],
+  "scripts": {
+    "start": "python weather_bot.py"
+  }
+}
