@@ -10,7 +10,7 @@
   "jobs": [
     {
       "name": "weather-job",
-      "schedule": "0 * * * *",  // chạy mỗi giờ
+      "schedule": "0 * * * *",
       "command": "python weather_bot.py"
     }
   ]
